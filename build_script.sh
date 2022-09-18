@@ -20,6 +20,9 @@ then
 			cp $filename build/.
 		fi
 	done
+	cd ..
+	echo "Build version $version contains:"
+	ls
 else
 	echo "Please come back when you are ready."
 fi
