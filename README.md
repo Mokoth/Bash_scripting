@@ -1,23 +1,15 @@
-#!/bin/bash
-ALIAS
-first_greeting="Nice to meet you!"
-later_greeting="How are you?"
-greeting_occasion=0
-greeting_limit=$1
-while [ $greeting_occasion -lt $greeting_limit ]
-do
-  if [ $greeting_occasion -lt 1 ]
-  then
-    echo $first_greeting
-  else
-    echo $later_greeting
-  fi
-  greeting_occasion=$((greeting_occasion + 1))
-done
+# BASH SCRIPTING
 
-Variables are assigned using an equals sign with no space (greeting="hello").
-Variables are accessed using a dollar sign (echo $greeting).
-Conditionals use if, then, else, fi syntax.
+## Variables
+
+Assigned using an `=` with no space ```greeting="hello"```
+Can be accessed using `$` (echo $greeting).
+
+### Conditions
+
+Use ```if```, ```then```, ```else```, ```fi``` syntax.
+
+### Looping
 Three types of loops can be used: for, while, and until.
 Bash scripts use a unique set of comparison operators:
 Equal: -eq
